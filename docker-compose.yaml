@@ -1,0 +1,9 @@
+name: custom-nodejs
+services:
+  my-app:
+    build:
+      context: ./images/nodejs/
+    volumes:
+      - ./volumes/my-app:/home/node/my-app:Z
+    tty: true
+    stdin_open: true
